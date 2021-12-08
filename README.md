@@ -8,10 +8,10 @@ A demonstration of self and semi supervised learning on the [STL-10 dataset](htt
 ### 1. Supervised_Learning:<br>
 [Supervised_Learning.ipynb]((Supervised_Learning.ipynb)) notebook uses supervised learning to classify the STL-10 i.e. 5000 labeled images, 500 per class. A Resnet9 architecture was used for the same. 
 
-    Results: 
-    ### 
-        Train Accuracy: 96.83 %
-        Test Accuracy: 74.875 %
+Results: 
+### 
+    Train Accuracy: 96.83 %
+    Test Accuracy: 74.875 %
 
 
 ### 2. Self-Supervised Learning:<br>
