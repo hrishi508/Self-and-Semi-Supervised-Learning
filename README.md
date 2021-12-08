@@ -52,5 +52,5 @@ The model and the training function compiled and trained on ~13 epochs successfu
 4. Gradient clipping was used to ensure that the gradients do not explode. Division by zero was also prevented at all stages by adding a small positive constant wherever required.
 
 ### 3. Semi-Supervised Learning:<br>
-Pseudo Labeling was used to use both labeled and unlabeled data simultaneously for training. We first tried on 1000 labeled and 2000 unlabeled images. This led to an increasing loss and reduced accuracy with respect to supervised learning. When we tried increasing the dataset to 5000 labeled and 20,000 unlabeled images we ran out of GPU resources.
+Pseudo Labeling was used to use both labeled and unlabeled data simultaneously for training in the [Pseudo_Labelling.ipynb](Pseudo_Labelling.ipynb) notebook. We first tried on 1000 labeled and 2000 unlabeled images. This led to an increasing loss and reduced accuracy with respect to supervised learning. When we tried increasing the dataset to 5000 labeled and 20,000 unlabeled images we ran out of GPU resources.
 However, we observed a steady increase in loss and an accuracy of 78% on the test set for the limited number epochs we were able to train.
