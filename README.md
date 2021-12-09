@@ -3,15 +3,15 @@ A demonstration of self and semi supervised learning on the [STL-10 dataset](htt
 
 ## Implementations:
 **Note:**<br>
-***The folder that contains the STL-10 dataset(~5GB) has been shared([link]()). Create a shortcut of the same in your drive to run all the ipython notebooks in your google colaboratory.***
+***The folder that contains the STL-10 dataset(~5GB) has been shared([link](https://drive.google.com/drive/folders/1eYHHjeDKr8SFjjxcnAtumztYlL4PIJ2a?usp=sharing)). Add a shortcut of the same to the "My Drive" section in your google drive to run all the ipython notebooks in your google colaboratory.***
 
 ### 1. Supervised_Learning:<br>
 [Supervised_Learning.ipynb]((Supervised_Learning.ipynb)) notebook uses supervised learning to classify the STL-10 i.e. 5000 labeled images, 500 per class. A Resnet9 architecture was used for the same. 
 
 Results: 
 ### 
-    Train Accuracy: 96.83 %
-    Test Accuracy: 74.875 %
+    Train Accuracy: 96.92 %
+    Test Accuracy: 73.32 %
 
 
 ### 2. Self-Supervised Learning:<br>
@@ -50,6 +50,8 @@ The model and the training function compiled and trained on ~13 epochs successfu
 3. A simpler model (AlexNet) was used in the [AlexNet_Barlow_Twins.ipynb](AlexNet_Barlow_Twins.ipynb) notebook. The error persisted.
 
 4. Gradient clipping was used to ensure that the gradients do not explode. Division by zero was also prevented at all stages by adding a small positive constant wherever required.
+
+5. We also tried using Facebook research's [implementation](https://github.com/facebookresearch/barlowtwins) of the Barlow Twins loss function and the LARS optimizer.
 
 ### 3. Semi-Supervised Learning:<br>
 Pseudo Labeling was used to use both labeled and unlabeled data simultaneously for training in the [Pseudo_Labelling.ipynb](Pseudo_Labelling.ipynb) notebook. We first tried on 1000 labeled and 2000 unlabeled images. This led to an increasing loss and reduced accuracy with respect to supervised learning. When we tried increasing the dataset to 5000 labeled and 20,000 unlabeled images we ran out of GPU resources.
