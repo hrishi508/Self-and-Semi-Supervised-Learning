@@ -6,7 +6,7 @@ A demonstration of self and semi supervised learning on the [STL-10 dataset](htt
 ***The folder that contains the STL-10 dataset(~5GB) has been shared([link](https://drive.google.com/drive/folders/1eYHHjeDKr8SFjjxcnAtumztYlL4PIJ2a?usp=sharing)). Add a shortcut of the same to the "My Drive" section in your google drive to run all the ipython notebooks in your google colaboratory.***
 
 ### 1. Supervised_Learning:<br>
-[Supervised_Learning.ipynb]((Supervised_Learning.ipynb)) notebook uses supervised learning to classify the STL-10 i.e. 5000 labeled images, 500 per class. A Resnet9 architecture was used for the same. 
+[Supervised_Learning.ipynb](Supervised_Learning.ipynb) notebook uses supervised learning to classify the STL-10 i.e. 5000 labeled images, 500 per class. A Resnet9 architecture was used for the same. 
 
 Results: 
 ### 
@@ -35,8 +35,8 @@ As seen in the image, Barlow Twins requires 2 augmentations of the same image to
 2. Implmented pseudo-code for training from this [link](https://lilianweng.github.io/lil-log/2021/05/31/contrastive-representation-learning.html#parallel-augmentation).
 
 3. Visulazing the embedding vectors:<br>
-Created two functions for visualizing 100 and 500 embedding vectors using PCA and tSNE methods of the *sklearn* library. The inputs are the current batch and the labels for the same. Called in the training function for visualization and analysis after every epoch. The results of the same are available [here](Results/Self_supervised).
-![img](Results/Self_supervised/Trial_1_epochs_13_nan_lr_0.001_batch_64_train_500/TSNE_Output_Epoch_12.png)
+Created two functions for visualizing 100 and 500 embedding vectors using PCA and tSNE methods of the *sklearn* library. The inputs are the current batch and the labels for the same. Called in the training function for visualization and analysis after every epoch. The results of the same are available [here](Results/Self-Supervised).
+![img](Results/Self-Supervised/Trial_1_epochs_13_nan_lr_0.001_batch_64_train_500/TSNE_Output_Epoch_12.png)
 
 **Issue Faced:**<br>
 The model and the training function compiled and trained on ~13 epochs successfully, however subsequently the loss abruptly becomes ```nan```. This in turn was occuring due to the gradient becoming ```nan```.
