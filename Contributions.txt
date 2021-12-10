@@ -1,0 +1,4 @@
+Hrishikesh Kusneniwar - 2019A7PS0179G - tSNE, Barlow Twins and Pseudo_labelling implementation, README, testing, debugging
+Abhineet Karn         - 2019A7PS0091G - Supervised Learning, AlexNet and ResNet Model implementation, README.md 
+Sushant Sreeram Swamy - 2019A7PS1031G - Barlow Twins and Pseudo_labelling implementation, testing, debugging
+Hardik Shah           - 2019A7PS0076G - Barlow Twins and Pseudo_labelling implementation, testing, debugging
